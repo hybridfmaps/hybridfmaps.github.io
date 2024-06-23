@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Hybrid Functional Maps for Crease-Aware Non-Isometric Shape Matching [CVPR 2024]">
+  <meta name="description" content="Hybrid Functional Maps for Crease-Aware Non-Isometric Shape Matching [CVPR 2024], hybridfmaps">
   <meta property="og:title" content="Hybrid Functional Maps for Crease-Aware Non-Isometric Shape Matching [CVPR 2024]"/>
   <meta property="og:description" content="A novel approach of hybridizing basis functions originating from different operators, resulting in hybrid functional maps for shape correspondence tasks, improving performance in near-isometric, non-isometric, and topologically noisy settings."/>
   <meta property="og:url" content="https://hybridfmaps.github.io"/>
@@ -20,7 +20,7 @@
   <meta name="twitter:image" content="static/images/hfm_web_teaser.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Hybrid Functional Maps, crease-aware, non-isometric, shape matching, CVPR 2024, elastic energy, functional maps">
+  <meta name="keywords" content="hybridfmaps, Hybrid Functional Maps, crease-aware, non-isometric, shape matching, CVPR 2024, elastic energy, functional maps">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -326,13 +326,21 @@ non-isometric correspondence settings and up to 45% improvement in scenarios wit
         <source src="static/videos/energy.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
  Left: Laplace-Beltrami operator (LBO) defined as hessian of the Dirchlet energy (measurement of smoothness of surface functions); Right: Hessian of the elastic energy (measurement of bending and stretching).
-      </h2>
+      </h2> -->
+      <h2 class="subtitle has-text-centered">
+        Left: Laplace-Beltrami operator as hessian of the Dirchlet energy; Right: Hessian of the elastic energy.
+             </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
+
+<!-- This is for search engine indexing for hybirdfmaps-->
+<div style="display: none;">
+  hybridfmaps
+</div>
 
 <!-- Video carousel -->
 <section class="hero is-small">
@@ -387,7 +395,7 @@ non-isometric correspondence settings and up to 45% improvement in scenarios wit
         Left: first 10 eigenmodes of the Laplace-Beltrami operator (smoothest scalar surface functions); Middle: first 10 eigenmodes of the elastic energy hessian (easiest bended and stretched deformations); Right: first 10 eigenmodes of the elastic energy hessian after projection onto the normal direction (non-orthogonal, crease-aware scalar basis functions).
              </h2> -->
              <h2 class="subtitle has-text-centered">
-                   First 10 LB eigenbasis, elastic eigenbasis and projected elastic eigenbasis onto the normal direction.
+                   First 10 LB eigenbasis, elastic eigenbasis and projected elastic eigenbasis to the normal direction.
                    </h2>
     </div>
   </div>
@@ -401,7 +409,20 @@ non-isometric correspondence settings and up to 45% improvement in scenarios wit
     <div class="hero-body">
       <img src="static/images/motivation.jpg" alt="Teaser" class="teaser-image">
       <h2 class="subtitle has-text-centered">
-        Correspondence visualization by transferring normal color and vertex positions from source to target shape. We show motivational comparison between LB, Elastic and Hybrid basis functions by encoding and recovering a ground truth correspondence through functional map representation.
+        Correspondence visualization by transferring normal color and vertex positions from source to target shape. Motivationally we show comparison between LB, Elastic and Hybrid basis functions by encoding and recovering a ground truth correspondence through functional map representation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End motivation figure -->
+ <!-- Motivation Figure-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/qualitative_6.jpeg" alt="Teaser" class="teaser-image">
+      <h2 class="subtitle has-text-centered">
+        A Percentage-Correct-Keypoint ablation between the pure
+        LB basis, pure elastic basis (orthogonalized), and our hybrid approach at the same spectral resolution (k = 200) from benchmarking results on SMAL with ULRSSM.
       </h2>
     </div>
   </div>
